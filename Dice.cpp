@@ -1,0 +1,15 @@
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+
+int main() {
+    std::srand(static_cast<unsigned>(std::time(nullptr)));
+    std::cout << "Rolling dice...\n";
+    int die1 = std::rand() % 6 + 1;
+    int die2 = std::rand() % 6 + 1;
+    int total = die1 + die2;
+    std::cout << "Die 1: " << die1 << "\n";
+    std::cout << "Die 2: " << die2 << "\n";
+    std::cout << "Total value: " << total << "\n";
+    return 0;
+}
