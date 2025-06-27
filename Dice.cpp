@@ -1,8 +1,14 @@
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
+#include <string>
 
 int main() {
+    std::string name;
+    std::cout << "What is your name? \n> ";
+    std::getline(std::cin, name);
+    std::cout << "Hello, " << name << "!\n\n";
+
     std::srand(static_cast<unsigned>(std::time(nullptr)));
     std::cout << "Rolling dice...\n";
     int die1 = std::rand() % 6 + 1;
