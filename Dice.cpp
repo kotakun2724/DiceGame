@@ -18,9 +18,9 @@ int main() {
     std::cout << "Die 2: " << die2 << "\n";
     std::cout << "Total value: " << total << "\n\n";
     if (total > 7) {
-        std::cout << "You won\n";
+        std::cout << name << " won!\n";
     } else {
-        std::cout << "You lost\n";
+        std::cout << name << " lost!\n";
     }
     return 0;
 }
