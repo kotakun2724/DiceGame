@@ -10,6 +10,11 @@ int main() {
     int total = die1 + die2;
     std::cout << "Die 1: " << die1 << "\n";
     std::cout << "Die 2: " << die2 << "\n";
-    std::cout << "Total value: " << total << "\n";
+    std::cout << "Total value: " << total << "\n\n";
+    if (total > 7) {
+        std::cout << "You won\n";
+    } else {
+        std::cout << "You lost\n";
+    }
     return 0;
 }
